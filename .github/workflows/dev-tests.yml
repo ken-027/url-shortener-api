@@ -1,0 +1,32 @@
+name: Dev Tests
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  TESTING_ENDPOINTS:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⬇️ Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: 🧱 Install dependencies
+        run: npm install
+
+      - name: 🧪 Run dev
+        run: npm run dev
+
+      - name: 🧪 Run dev tests
+        run: npm run test:e2e
+        env:
+          NODE_ENV: development
+          PORT: 5000
+          TIMEZONE: Asia/Manila

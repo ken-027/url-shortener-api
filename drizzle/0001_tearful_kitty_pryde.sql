@@ -1,0 +1,1 @@
+ALTER TABLE "url_shortener" ADD COLUMN "access_count" integer DEFAULT 0 NOT NULL;
