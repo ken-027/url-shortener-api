@@ -1,7 +1,13 @@
+## 📘 Project Source
+This project was built as part of the [URL Shortening Service](https://roadmap.sh/projects/url-shortening-service) challenge on roadmap.sh.
+
+
 # 🔗 URL Shortener API
 
 A modern, scalable URL shortening service built with **Express**, **TypeScript**, and **PostgreSQL (Drizzle ORM)**.
 Supports analytics tracking, customizable short codes, and OpenAPI (Swagger) documentation for easy integration.
+
+https://roadmap.sh/projects/url-shortening-service
 
 ---
 
